@@ -1,0 +1,159 @@
+/* Base Style Sheet */
+
+*{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    width: auto;
+}
+
+title{
+    display: none;
+}
+
+.name{
+    text-align: center;
+}
+
+.main-nav{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    display: block;
+    padding: 10px;
+    border: solid 3px rgb(233, 233, 233);
+    background-color: white;
+}
+
+
+
+.top {
+    color: rgba(71, 71, 71, 0.849);
+    font-weight: lighter;
+    text-align: center;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
+
+.student-image{
+    width: 55%;
+    align-self: center;
+}
+
+.sections{
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.portfolio{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 50px;
+    background-color: whitesmoke;
+}
+
+.col {
+    background-color: whitesmoke;
+    width: 100%;
+    color: rgba(71, 71, 71, 0.849)
+}
+
+.col h3{
+    font-weight: 600;
+    margin-bottom: -5px;
+    background-color: whitesmoke;;
+}
+
+.col p{
+    font-weight: 500;
+    align-self: center;
+    width: 82%;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    background-color: whitesmoke;
+}
+
+.pic {
+    width: 93%;
+    align-self: center;
+}
+
+footer{
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    color: rgba(71, 71, 71, 0.781);
+}
+
+footer h3{
+    color: rgba(59, 59, 59, 0.849);
+    font-weight: bolder;
+}
+
+footer h4 {
+    font-weight: lighter;
+}
+
+footer p {
+    flex-direction: row;
+    align-self: center;
+}
+
+/* .bottom-nav {
+    align-self: flex-start;
+    padding-left: 1.5%;
+    font-weight: 600;
+    color: rgba(59, 59, 59, 0.849)
+} */
+
+footer hr {
+    border: solid 0.1px rgba(59, 59, 59, 0.335);
+    width: 97%;
+}
+
+.bottom-nav-button {
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+    .right, .left{
+        display: none;
+    }
+
+    .bottom ul li {
+        padding: 0 15px;
+    }
+
+    .bottom-nav-button {
+        display: flex;
+        flex-direction: row;
+        margin-left: -20px;
+        text-decoration: none;
+    }
+
+    .item1 {
+        justify-content: space-between;
+        margin-right: auto;
+    }
+
+    .bottom-nav-button:visited{
+        text-decoration: none;
+    }
+}
